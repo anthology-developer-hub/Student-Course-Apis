@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "d03ea9cd-4ae9-4d27-9939-e6fc97fdeca5",
+		"name": "StudentCourse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25542913",
+		"_collection_link": "https://lively-desert-302919.postman.co/workspace/Api_testing~f8efb4b1-477e-487d-8cad-68d2276deab4/collection/25542913-d03ea9cd-4ae9-4d27-9939-e6fc97fdeca5?action=share&source=collection_link&creator=25542913"
+	},
+	"item": [
+		{
+			"name": "AllCourseList",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "$pw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "$email",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/Courses",
+					"protocol": "https",
+					"host": [
+						"sisclientweb-700031",
+						"campusnexus",
+						"cloud"
+					],
+					"path": [
+						"ds",
+						"campusnexus",
+						"Courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CourseTypes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "$pw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "$email",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/CourseTypes",
+					"protocol": "https",
+					"host": [
+						"sisclientweb-700031",
+						"campusnexus",
+						"cloud"
+					],
+					"path": [
+						"ds",
+						"campusnexus",
+						"CourseTypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreditCourseList",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "$pw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "$email",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/Courses/CampusNexus.GetTransferCreditCourseList()",
+					"protocol": "https",
+					"host": [
+						"sisclientweb-700031",
+						"campusnexus",
+						"cloud"
+					],
+					"path": [
+						"ds",
+						"campusnexus",
+						"Courses",
+						"CampusNexus.GetTransferCreditCourseList()"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ChangeCourseDescriptionJobResults",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "$pw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "$email",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/Courses/CampusNexus.GetChangeCourseDescriptionJobResults()",
+					"protocol": "https",
+					"host": [
+						"sisclientweb-700031",
+						"campusnexus",
+						"cloud"
+					],
+					"path": [
+						"ds",
+						"campusnexus",
+						"Courses",
+						"CampusNexus.GetChangeCourseDescriptionJobResults()"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
